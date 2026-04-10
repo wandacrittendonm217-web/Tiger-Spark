@@ -242,6 +242,15 @@
       line-height: 1.7;
     }
 
+    .card, .meta-item, .timeline-step, .hero-card {
+      min-width: 0;
+    }
+
+    p, h1, h2, h3, li, a, div, strong {
+      overflow-wrap: anywhere;
+      word-break: break-word;
+    }
+
     .meta-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -296,36 +305,95 @@
     }
 
     footer {
-      padding: 8px 0 44px;
+      padding: 20px 0 44px;
       color: var(--muted);
       text-align: center;
     }
 
-    .footer-links {
-      display: flex;
-      justify-content: center;
-      gap: 12px;
-      flex-wrap: wrap;
-      margin-bottom: 16px;
+    .footer-note {
+      padding: 18px 20px;
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 18px;
+      background: rgba(255,255,255,0.04);
+      display: inline-block;
+      max-width: 100%;
     }
 
     a.inline-link { color: var(--accent); }
 
-    @media (max-width: 900px) {
-      .card { grid-column: span 6; }
+    @media (max-width: 980px) {
+      .cards {
+        grid-template-columns: 1fr;
+      }
+      .card,
+      .card[style] {
+        grid-column: auto !important;
+      }
       .pulse-dots { position: static; margin-top: 18px; }
     }
 
-    @media (max-width: 640px) {
+    @media (max-width: 768px) {
       .hero { padding-top: 34px; }
       .hero-card { padding: 22px; border-radius: 24px; }
-      .card { grid-column: span 12; padding: 20px; }
+      .card,
+      .card[style] {
+        padding: 20px;
+      }
       .meta-grid { grid-template-columns: 1fr; }
       .topbar-inner { align-items: stretch; }
       nav { width: 100%; }
-      nav a { flex: 1 1 calc(50% - 10px); justify-content: center; }
-      h1 { line-height: 1.02; }
-      .cta-row .btn { width: 100%; justify-content: center; }
+      nav a {
+        flex: 1 1 calc(50% - 10px);
+        justify-content: center;
+        min-width: 0;
+      }
+      h1 {
+        line-height: 1.02;
+        font-size: clamp(2rem, 9vw, 3rem);
+      }
+      h2 {
+        font-size: 1.25rem;
+        line-height: 1.25;
+      }
+      h3 {
+        font-size: 1.05rem;
+        line-height: 1.35;
+      }
+      .lead,
+      .card p,
+      .card li {
+        font-size: 0.98rem;
+        line-height: 1.65;
+      }
+      .cta-row .btn {
+        width: 100%;
+        justify-content: center;
+      }
+      .footer-note {
+        width: 100%;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .container {
+        width: min(1120px, calc(100% - 20px));
+      }
+      .hero-card,
+      .card {
+        padding: 18px;
+        border-radius: 20px;
+      }
+      .timeline-step {
+        grid-template-columns: 1fr;
+        gap: 10px;
+      }
+      .step-badge {
+        width: 48px;
+        height: 48px;
+      }
+      nav a {
+        flex-basis: calc(50% - 10px);
+      }
     }
   </style>
 </head>
@@ -464,13 +532,7 @@
 
   <footer>
     <div class="container">
-      <div class="footer-links">
-        <a class="btn" href="index.html">Home</a>
-        <a class="btn" href="privacy-policy.html">Privacy Policy</a>
-        <a class="btn" href="support.html">Support</a>
-        <a class="btn" href="marketing.html">Marketing</a>
-      </div>
-      <div>© Arctic dev • Tiger Spark • Public developer information page</div>
+      <div class="footer-note">© Arctic dev • Tiger Spark • Public developer information page</div>
     </div>
   </footer>
 </body>

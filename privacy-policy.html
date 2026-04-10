@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Privacy Policy for Tiger Spark by Arctic dev." />
+  <title>Privacy Policy | Tiger Spark</title>
+  <style>
+    :root {
+      --bg: #0c1020;
+      --panel: rgba(255,255,255,0.07);
+      --panel-strong: rgba(255,255,255,0.10);
+      --text: #f4f7ff;
+      --muted: #c7d0ef;
+      --accent: #84f6d7;
+      --accent2: #8fb4ff;
+      --line: rgba(255,255,255,0.14);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, Arial, sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(143,180,255,0.22), transparent 22%),
+        radial-gradient(circle at 85% 15%, rgba(132,246,215,0.18), transparent 24%),
+        linear-gradient(155deg, #090e1a, #121a30 65%, #0b1220);
+      color: var(--text);
+      min-height: 100vh;
+    }
+    .wrap {
+      width: min(940px, calc(100% - 28px));
+      margin: 0 auto;
+      padding: 26px 0 44px;
+    }
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 18px;
+    }
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    a.btn {
+      text-decoration: none;
+      color: var(--text);
+      padding: 10px 15px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid var(--line);
+      transition: 0.2s ease;
+    }
+    a.btn:hover { transform: translateY(-2px); border-color: rgba(132,246,215,0.4); }
+    .sheet {
+      position: relative;
+      overflow: hidden;
+      border-radius: 30px;
+      background: linear-gradient(180deg, var(--panel-strong), var(--panel));
+      border: 1px solid var(--line);
+      padding: 30px;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.35);
+    }
+    .sheet::before {
+      content: "";
+      position: absolute;
+      inset: auto -40px -40px auto;
+      width: 220px;
+      height: 220px;
+      background: radial-gradient(circle, rgba(132,246,215,0.25), transparent 65%);
+      pointer-events: none;
+    }
+    .eyebrow {
+      display: inline-block;
+      padding: 8px 12px;
+      border-radius: 999px;
+      color: var(--accent);
+      background: rgba(132,246,215,0.1);
+      border: 1px solid rgba(132,246,215,0.16);
+      margin-bottom: 16px;
+    }
+    h1 {
+      margin: 0 0 10px;
+      font-size: clamp(2rem, 4.5vw, 3.5rem);
+      letter-spacing: -1px;
+    }
+    p, li {
+      line-height: 1.8;
+      color: var(--muted);
+    }
+    .notice {
+      margin: 22px 0;
+      padding: 18px;
+      border-radius: 20px;
+      background: rgba(132,246,215,0.08);
+      border: 1px solid rgba(132,246,215,0.18);
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      margin-top: 22px;
+    }
+    .box {
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 20px;
+      background: rgba(255,255,255,0.04);
+    }
+    .box h2 {
+      margin-top: 0;
+    }
+    .footer-note {
+      margin-top: 24px;
+      padding-top: 18px;
+      border-top: 1px solid rgba(255,255,255,0.08);
+    }
+    .accent { color: var(--accent); font-weight: 700; }
+    @media (max-width: 680px) {
+      .sheet { padding: 22px; border-radius: 22px; }
+      .grid { grid-template-columns: 1fr; }
+      .nav { align-items: stretch; }
+      .nav-links { width: 100%; }
+      a.btn { flex: 1 1 calc(50% - 10px); text-align: center; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="nav">
+      <a class="btn" href="index.html">← Back to Home</a>
+      <div class="nav-links">
+        <a class="btn" href="support.html">Support</a>
+        <a class="btn" href="marketing.html">Marketing</a>
+      </div>
+    </div>
+
+    <main class="sheet">
+      <div class="eyebrow">Official Privacy Policy</div>
+      <h1>Privacy Policy for Tiger Spark</h1>
+      <p>
+        This Privacy Policy applies to the mobile application <span class="accent">Tiger Spark</span>, published by <span class="accent">Arctic dev</span>.
+        It is provided to clearly explain how user information is handled.
+      </p>
+
+      <div class="notice">
+        <strong>Simple Summary:</strong>
+        <p>
+          We do <span class="accent">not collect</span> personal data, we do <span class="accent">not store</span> user data,
+          and we do <span class="accent">not share</span> user data with third parties.
+        </p>
+      </div>
+
+      <div class="grid">
+        <section class="box">
+          <h2>Information Collection</h2>
+          <p>
+            Tiger Spark does not collect personal information, device information, location data, contact data,
+            payment data, or any other identifiable user information.
+          </p>
+        </section>
+
+        <section class="box">
+          <h2>Data Storage</h2>
+          <p>
+            Tiger Spark does not store user data on external servers, private databases, or cloud services.
+            No personal records are maintained by the developer.
+          </p>
+        </section>
+
+        <section class="box">
+          <h2>Data Sharing</h2>
+          <p>
+            No user data is sold, transferred, shared, or disclosed to third parties because no user data is collected in the first place.
+          </p>
+        </section>
+
+        <section class="box">
+          <h2>Children's Privacy</h2>
+          <p>
+            Since Tiger Spark does not collect any personal data, it does not knowingly process information relating to children or any other users.
+          </p>
+        </section>
+      </div>
+
+      <section class="box" style="margin-top: 18px;">
+        <h2>Policy Updates</h2>
+        <p>
+          If the app changes in the future and begins to use features that require data processing, this Privacy Policy will be updated before such changes are applied.
+          Any future update will be written clearly and published publicly.
+        </p>
+      </section>
+
+      <section class="footer-note">
+        <p>
+          If you have any questions regarding this policy, you can contact the developer at
+          <a class="accent" href="mailto:wandacrittendonm217@gmail.com">wandacrittendonm217@gmail.com</a>.
+        </p>
+        <p>
+          Developer: Arctic dev<br>
+          App: Tiger Spark
+        </p>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
